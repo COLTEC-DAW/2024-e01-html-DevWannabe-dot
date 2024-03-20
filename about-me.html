@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="author" content="Pedro H."/>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="This is the document for the first HTML exercise proposed by professor João Eduardo Montandon." />
+	<title>About Me: Pedro H.</title>
+	<style type=text/css>
+		body {
+			background-color: rgb(0, 0, 0);
+			color: white;
+		}
+		table, th, td {
+			width: 300px;
+			border: 1px solid;
+			text-align: center;
+		}
+		blink {
+			animation: blink 1s steps(1, end) infinite;
+		}
+		@keyframes blink {
+			0% {
+				opacity: 1;
+			}
+			50% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		#myAnimatableDIV {
+			width: 500px;
+			height: 350px;
+			margin: 50px;
+			display: flex;
+			outline: dotted 1px #00FF00;
+			justify-content: center; /* justifies to the center horizontally */
+			align-items: center; /* locks to center to avoid stretching */
+			animation: anim 2s infinite;
+		}
+		@keyframes anim {
+			60% {outline: solid 10px black;}
+		}
+	</style>
+</head>
+<body>
+	<!-- Begin About Me section -->
+	<h1 style="text-align:center;">About me: Pedro<blink>_</blink></h1>
+	<!-- Paragraph 1 -->
+	<p><b>Hey there!</b> My name is Pedro 106, and I am 17 years old. I'm a senior student at the Technical College of UFMG, where I'm working toward earning both my High School and Associate degree, majoring in Computer Science with a minor in Systems Development.</p>
+	<!-- Paragraph 2 -->
+	<p>In my spare time, I like to study, code, sprint and lift weights.</p>
+	<div id="myAnimatableDIV">
+		<table>
+		<tr>
+			<th>Language</th>
+			<th>Experience</th>
+		</tr>
+		<tr>
+			<td>C/C++</td>
+			<td>Intermediate</td>
+		</tr>
+		<tr>
+			<td>Lua</td>
+			<td>Intermediate</td>
+		</tr>
+
+		<tr>
+			<td>Java</td>
+			<td>Intermediate</td>
+		</tr>
+		<tr>
+			<td>HTML5</td>
+			<td>Intermediate</td>
+		</tr>
+		<tr>
+			<td>Verilog</td>
+			<td>Beginner</td>
+		</tr>
+		<tr>
+			<td>CSS3</td>
+			<td>Beginner</td>
+		</tr>
+		<tr>
+			<td>Shell script</td>
+			<td>Beginner</td>
+		</tr>
+		<tr>
+			<td>PHP</td>
+			<td>Beginner</td>
+		</tr>
+		<tr>
+			<td>MySQL</td>
+			<td>Beginner</td>
+		</tr>
+	</table>
+	</div>
+	<!-- End of the document's body -->
+</body>
+</html>
+<!-- EOF -->
